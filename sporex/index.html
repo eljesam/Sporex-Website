@@ -15,6 +15,21 @@ backdrop-filter: blur(16px);
 background: rgba(255,255,255,0.05);
 border:1px solid rgba(255,255,255,0.1);
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
 </style>
 
 </head>
@@ -219,21 +234,36 @@ Asthma Society of Ireland
 </section>
 
 <!-- TESTIMONIAL -->
-<section class="py-24 bg-gray-950 px-6 text-center">
+<section class="py-24 bg-gray-950 px-6">
 
-<div class="max-w-3xl mx-auto">
+<div class="max-w-6xl mx-auto text-center">
 
-<h2 class="text-3xl font-bold mb-8">
+<h2 class="text-3xl font-bold mb-12">
 Peace of Mind for Your Home
 </h2>
 
-<p class="text-gray-300 text-lg mb-6">
-“SporeX helped us detect hidden mould before it became serious. It saved us thousands.”
-</p>
+<div class="grid gap-8 lg:grid-cols-3">
+  <div class="group bg-gray-900 border border-gray-800 rounded-3xl p-8 text-left shadow-xl transition-transform hover:-translate-y-1 animate-fade-in-up" style="animation-delay: 0s;">
+    <p class="text-gray-300 text-lg mb-6">
+      “SporeX helped us detect hidden mould before it became serious. It saved us thousands.”
+    </p>
+    <span class="text-green-400 font-semibold">Homeowner, Dublin</span>
+  </div>
 
-<span class="text-green-400 font-semibold">
-Homeowner, Dublin
-</span>
+  <div class="group bg-gray-900 border border-gray-800 rounded-3xl p-8 text-left shadow-xl transition-transform hover:-translate-y-1 animate-fade-in-up" style="animation-delay: 0.12s;">
+    <p class="text-gray-300 text-lg mb-6">
+      “The SporeX alerts gave us enough time to act before mould damaged our walls. Highly recommended for every home.”
+    </p>
+    <span class="text-green-400 font-semibold">Landlord, Cork</span>
+  </div>
+
+  <div class="group bg-gray-900 border border-gray-800 rounded-3xl p-8 text-left shadow-xl transition-transform hover:-translate-y-1 animate-fade-in-up" style="animation-delay: 0.24s;">
+    <p class="text-gray-300 text-lg mb-6">
+      “Installation was effortless and the app keeps us informed day and night. It’s become an essential part of our family routine.”
+    </p>
+    <span class="text-green-400 font-semibold">Family, Galway</span>
+  </div>
+</div>
 
 </div>
 
